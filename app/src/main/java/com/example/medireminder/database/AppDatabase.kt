@@ -5,7 +5,7 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = [Usuario::class, Medicamento::class, Recordatorio::class, Historial::class, Sintoma::class], version = 2) // <-- Asegúrate de que la versión esté actualizada (ej. a 2)
+@Database(entities = [Usuario::class, Medicamento::class, Recordatorio::class, Historial::class, Sintoma::class], version = 3) // <-- Asegúrate de que la versión esté actualizada (ej. a 2)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun usuarioDao(): UsuarioDao
     abstract fun medicamentoDao(): MedicamentoDao

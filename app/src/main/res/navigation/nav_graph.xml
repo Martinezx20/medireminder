@@ -48,6 +48,10 @@
         <action
             android:id="@+id/action_homeFragment_to_sintomasFragment"
             app:destination="@id/sintomasFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/nav_graph" app:popUpToInclusive="true" />
     </fragment>
 
     <fragment
@@ -112,4 +116,6 @@
         android:id="@+id/addHistorialFragment"
         android:name="com.example.medireminder.fragments.AddHistorialFragment"
         android:label="Agregar Historial"
-        tools:layout="@layout/fragment_add_historial"/> </navigation>
+        tools:layout="@layout/fragment_add_historial"/>
+
+</navigation>

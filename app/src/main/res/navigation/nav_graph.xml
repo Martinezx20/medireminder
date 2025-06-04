@@ -1,39 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/loginFragment">
 
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.medireminder.fragments.LoginFragment"
-        android:label="Login">
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_loginFragment_to_registerFragment"
             app:destination="@id/registerFragment" />
         <action
             android:id="@+id/action_loginFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
-
-        <action
-            android:id="@+id/action_registerFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
-
     </fragment>
 
     <fragment
         android:id="@+id/registerFragment"
         android:name="com.example.medireminder.fragments.RegisterFragment"
-        android:label="Register">
+        android:label="Register"
+        tools:layout="@layout/fragment_register">
         <action
             android:id="@+id/action_registerFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.medireminder.fragments.HomeFragment"
-        android:label="Home">
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_medicamentosFragment"
             app:destination="@id/medicamentosFragment" />
@@ -46,31 +48,68 @@
         <action
             android:id="@+id/action_homeFragment_to_sintomasFragment"
             app:destination="@id/sintomasFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_loginFragment"
-            app:destination="@id/loginFragment"
-            app:popUpTo="@id/nav_graph"
-            app:popUpToInclusive="true" />
     </fragment>
 
     <fragment
         android:id="@+id/medicamentosFragment"
         android:name="com.example.medireminder.fragments.MedicamentosFragment"
-        android:label="Medicamentos" />
+        android:label="Medicamentos"
+        tools:layout="@layout/fragment_medicamentos">
+        <action
+            android:id="@+id/action_medicamentosFragment_to_addMedicamentoFragment"
+            app:destination="@id/addMedicamentoFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/recordatoriosFragment"
         android:name="com.example.medireminder.fragments.RecordatoriosFragment"
-        android:label="Recordatorios" />
+        android:label="Recordatorios"
+        tools:layout="@layout/fragment_recordatorios">
+        <action
+            android:id="@+id/action_recordatoriosFragment_to_addRecordatorioFragment"
+            app:destination="@id/addRecordatorioFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/historialFragment"
         android:name="com.example.medireminder.fragments.HistorialFragment"
-        android:label="Historial" />
+        android:label="Historial"
+        tools:layout="@layout/fragment_historial">
+        <action
+            android:id="@+id/action_historialFragment_to_addHistorialFragment"
+            app:destination="@id/addHistorialFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/sintomasFragment"
         android:name="com.example.medireminder.fragments.SintomasFragment"
-        android:label="Sintomas" />
+        android:label="Síntomas"
+        tools:layout="@layout/fragment_sintomas">
+        <action
+            android:id="@+id/action_sintomasFragment_to_addSintomaFragment"
+            app:destination="@id/addSintomaFragment" />
+    </fragment>
 
-</navigation>
+    <fragment
+        android:id="@+id/addMedicamentoFragment"
+        android:name="com.example.medireminder.fragments.AddMedicamentoFragment"
+        android:label="Agregar Medicamento"
+        tools:layout="@layout/fragment_add_medicamento"/>
+
+    <fragment
+        android:id="@+id/addRecordatorioFragment"
+        android:name="com.example.medireminder.fragments.AddRecordatorioFragment"
+        android:label="Agregar Recordatorio"
+        tools:layout="@layout/fragment_add_recordatorio"/>
+
+    <fragment
+        android:id="@+id/addSintomaFragment"
+        android:name="com.example.medireminder.fragments.AddSintomaFragment"
+        android:label="Agregar Síntoma"
+        tools:layout="@layout/fragment_add_sintoma"/>
+
+    <fragment
+        android:id="@+id/addHistorialFragment"
+        android:name="com.example.medireminder.fragments.AddHistorialFragment"
+        android:label="Agregar Historial"
+        tools:layout="@layout/fragment_add_historial"/> </navigation>

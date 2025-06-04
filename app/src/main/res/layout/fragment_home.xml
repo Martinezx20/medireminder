@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_light_gray"> <Button
+    android:id="@+id/btnMedicamentos"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Ver Medicamentos"
+    style="@style/AppButton"
+    android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnRecordatorios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Recordatorios"
+        style="@style/AppButton"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnHistorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Historial"
+        style="@style/AppButton"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnSintomas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Síntomas"
+        style="@style/AppButton"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Cerrar Sesión"
+        style="@style/AppButton"
+        android:backgroundTint="@android:color/holo_red_light" /> </LinearLayout>

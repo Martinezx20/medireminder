@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">medireminder</string>.
+    <string name="preference_file_key">com.example.medireminder.PREFERENCE_FILE_KEY</string>
+</resources>

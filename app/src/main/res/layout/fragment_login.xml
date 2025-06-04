@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_light_gray"> <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Iniciar Sesión"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:textColor="@color/text_black"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="32dp"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/text_black"
+        android:textColorHint="@color/text_light_gray"
+        android:backgroundTint="@color/app_green_primary" android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textColor="@color/text_black"
+        android:textColorHint="@color/text_light_gray"
+        android:backgroundTint="@color/app_green_primary"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesión"
+        style="@style/AppButton" android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btn_go_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿No tienes cuenta? Regístrate"
+        android:textColor="@color/background_white"
+        android:layout_gravity="center_horizontal"
+        style="@style/AppTextButton" />
+
+</LinearLayout>

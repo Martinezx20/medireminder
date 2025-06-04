@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MediReminder" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/app_green_primary</item>
+        <item name="colorPrimaryVariant">@color/app_green_dark</item> <item name="colorOnPrimary">@color/text_on_primary</item> <item name="colorSecondary">@color/app_green_primary</item>
+        <item name="colorSecondaryVariant">@color/app_green_dark</item>
+        <item name="colorOnSecondary">@color/text_on_primary</item>
+
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:windowBackground">@color/background_light_gray</item>
+
+        <item name="android:textColor">@color/text_black</item>
+
+        <item name="materialButtonStyle">@style/AppButton</item>
+
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+        <item name="android:editTextColor">@color/text_black</item> <item name="android:textColorHint">@color/text_light_gray</item> </style>
+
+    <style name="Theme.MediReminder.NoActionBar" parent="Theme.MediReminder">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/app_green_primary</item>
+        <item name="android:textColor">@color/text_on_primary</item>
+    </style>
+
+    <style name="AppTextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/app_green_primary</item>
+    </style>
+
+</resources>
